@@ -1,0 +1,77 @@
+body {
+	background-image: url("../img/hamburger_grill_bkgrnd.jpg");
+	background-size: cover;
+	font-family: Chewy;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
+
+/* input field for entering new burgers */
+#burger_type {
+	width: 25%;
+	height: 24px;
+	border-radius: 25px;
+	font-family: "Open Sans";
+	font-weight: bold;
+	background-color: DarkGray;
+}
+
+/* button for entering new burgers */
+#add_burger {	
+	height: 24px;
+	border-radius: 25px;
+	font-family: "Open Sans";
+	font-weight: bold;
+}
+
+/* buttons for devouring burgers */
+.eat_burger {	
+	height: 24px;
+	border-radius: 25px;
+	margin-top: 4px;
+	font-family: "Open Sans";
+	font-weight: bold;
+	float: right;
+}
+
+/* container for all burgers after they're made but before devoured */
+#made_burgers {
+	width: 35%;
+	padding-left: 24px;
+	position: fixed;
+	left: 0;
+	top: 30%
+}
+
+/* container for all burgers after they've been devoured */
+#devoured_burgers {
+	width: 35%;
+	padding-right: 24px;
+	position: fixed;
+	right: 0;
+	top: 30%
+}
+
+/* container representing a single burger */
+.burger {
+	height: 32px;
+	border-radius: 25px;
+	text-align: left;
+	background-color: DarkGray;
+	font-family: "Open Sans";
+	font-size: 20px;
+}
+
+/* the text of a burger's name */
+.burger_txt {
+	position: relative;
+	top: -8px;
+}
+
+/* small icon like image of a single burger */
+.burger_img {
+	height: 32px;
+	border-radius: 25px;
+	margin-right: 5px;
+}

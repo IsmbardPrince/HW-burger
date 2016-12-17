@@ -1,0 +1,34 @@
+<h1>Eat-Da-Burger!</h1>
+
+<h3>What kind of burger do you want?</h3>
+
+<div>
+  <input id="burger_type" type="text" name="burger_type">
+  <br>
+  <button id="add_burger">Make it now!</button>
+</div>
+
+<div id="made_burgers">
+  {{#each burgers}}
+    {{#unless this.devoured}}
+      <div class="burger">
+        <img class="burger_img" src="./assets/img/hamburger.jpg">
+        <span class="burger_txt">{{this.id}}. {{this.burger_name}}</span>
+        <button class="eat_burger" value="{{this.id}}">Devour it!</button>
+      </div>
+    {{/unless}}
+  {{/each}}
+</div>
+
+<div id="devoured_burgers">
+  {{#each burgers}}
+    {{#if this.devoured}}
+      <div class="burger">
+        <img class="burger_img" src="./assets/img/half_eaten_hamburger.jpg">
+        <span class="burger_txt">{{this.id}}. {{this.burger_name}}</span>
+      </div>
+    {{/if}}
+  {{/each}}
+</div>
+
+<script type="text/javascript" src="./assets/javascript/burgers.js"></script>
